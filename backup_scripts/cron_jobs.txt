@@ -1,0 +1,2 @@
+# cron_jobs.txt
+0 2 * * * /home/monter/devsecops_learning/backup_scripts/backup_db.sh
