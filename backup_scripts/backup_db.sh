@@ -19,3 +19,6 @@ else
     echo "Backup failed!"
     exit 1
 fi
+
+# Delete backups older than 7 days
+find "$BACKUP_DIR" -name "${DB_NAME}_*.sql.gz" -type f -mtime +7 -delete
